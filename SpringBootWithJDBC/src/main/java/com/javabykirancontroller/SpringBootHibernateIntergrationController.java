@@ -84,6 +84,7 @@ public class SpringBootHibernateIntergrationController {
 	public List<String> getAllEmpById (@PathVariable("eid") int eid)throws Exception{
 		System.out.println("Getting All Users By Id");
 		List<String> listuser = springservice.getAllEmpById(eid);
+		System.out.println("Student Added");
 		return listuser;
 	}
 	
